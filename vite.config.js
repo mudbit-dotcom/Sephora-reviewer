@@ -18,7 +18,12 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 
 export default defineConfig(({ mode }) => ({
-  plugins: [mode === 'test' ? svelte({ hot: false }) : sveltekit(), ViteYaml()],
+  plugins: [
+    mode === 'test'
+      ? svelte({ hot: false, compilerOptions: { runes: true } })
+      : sveltekit(),
+    ViteYaml()
+  ],
   ...(mode === 'test' ? { resolve: { conditions: ['browser'] } } : {}),
   test: {
     environment: 'jsdom',
