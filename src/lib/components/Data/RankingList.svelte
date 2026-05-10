@@ -3,10 +3,13 @@
 RankingList.svelte — A container for RankingCard items with an optional title.
 -->
 <script>
-  let { title = '', children } = $props();
+  let { category = '', title = '', children } = $props();
 </script>
 
 <div class="ranking-list">
+  {#if category}
+    <p class="ranking-list-category">{category}</p>
+  {/if}
   {#if title}
     <h2 class="ranking-list-title">{title}</h2>
   {/if}
@@ -21,6 +24,18 @@ RankingList.svelte — A container for RankingCard items with an optional title.
     border-radius: 4px;
     overflow: hidden;
     background: var(--color-white, #fff);
+  }
+
+  .ranking-list-category {
+    margin: 0;
+    padding: var(--spacing-xs, 0.5rem) var(--spacing-md, 1rem);
+    font-size: var(--font-size-sm, 0.875rem);
+    font-weight: var(--font-weight-bold, 700);
+    color: var(--color-accent, #003da5);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider, 0.05em);
+    background: var(--color-white, #fff);
+    border-bottom: 1px solid var(--color-border, #ddd);
   }
 
   .ranking-list-title {

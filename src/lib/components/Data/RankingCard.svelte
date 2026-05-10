@@ -23,13 +23,22 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
       ? asset(image)
       : image
   );
+  let currentImage = $state('');
+
+  $effect(() => {
+    currentImage = resolvedImage;
+  });
+
+  function handleImageError() {
+    currentImage = '';
+  }
 </script>
 
 {#snippet cardContent()}
   <span class="rank">{rank}</span>
-  {#if image}
+  {#if currentImage}
     <div class="thumbnail">
-      <img src={resolvedImage} alt={imageAlt} />
+      <img src={currentImage} alt={imageAlt} onerror={handleImageError} />
     </div>
   {/if}
   <div class="content">
@@ -49,7 +58,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
 {/snippet}
 
 {#if href}
-  <a {href} class="ranking-card ranking-card-link">
+  <a {href} class="ranking-card ranking-card-link" data-sveltekit-reload>
     {@render cardContent()}
   </a>
 {:else}
@@ -83,7 +92,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
     font-weight: 700;
     min-width: 2ch;
     text-align: center;
-    color: var(--color-accent, #003da5);
+    color: red;
   }
 
   .thumbnail {
@@ -116,7 +125,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
   .description {
     margin: 0.25rem 0 0;
     font-size: 0.875rem;
-    color: var(--color-text-secondary, #555);
+    color: black;
     line-height: 1.4;
   }
 

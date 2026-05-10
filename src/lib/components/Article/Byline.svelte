@@ -6,7 +6,7 @@ Displays the provided author name(s) in a sans-serif paragraph styled with
 medium-gray text. Used by both header components for consistent attribution.
 
 USAGE EXAMPLE:
-<Byline byline="Jane Smith, John Doe" />
+<Byline byline="Niya Doyle" />
 -->
 <script>
   let {
@@ -22,7 +22,7 @@ USAGE EXAMPLE:
   .byline {
     font-family: var(--font-sans);
     font-size: var(--font-size-base);
-    color: var(--color-medium-gray);
+    color: red;
     margin: var(--spacing-xxs) 0;
   }
 </style>

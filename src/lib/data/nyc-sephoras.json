@@ -1,0 +1,493 @@
+{
+  "title": "All Sephora Locations in NYC – Ranked Low to High by Rating",
+  "source": "Google Places",
+  "last_updated": "2026-05-06",
+  "total_locations": 24,
+  "locations": [
+    {
+      "rank": 1,
+      "name": "Sephora at Kohl's – Bay Parkway",
+      "address": "8973 Bay Pkwy Ste 1, Brooklyn, NY 11214",
+      "borough": "Brooklyn",
+      "neighborhood": "Bensonhurst",
+      "rating": 2.9,
+      "review_count": 48,
+      "type": "Sephora at Kohl's",
+      "coordinates": { "latitude": 40.593163, "longitude": -74.000999 },
+      "hours": {
+        "monday": "9:00 AM – 10:00 PM",
+        "tuesday": "9:00 AM – 10:00 PM",
+        "wednesday": "9:00 AM – 10:00 PM",
+        "thursday": "9:00 AM – 10:00 PM",
+        "friday": "9:00 AM – 10:00 PM",
+        "saturday": "9:00 AM – 10:00 PM",
+        "sunday": "9:00 AM – 9:00 PM"
+      },
+      "bodyBullets": [
+        "''The store is often lacking in stock. The sales team is immature and unhelpful. I had a terrible experience and would not recommend to anyone - go to Macy's or Ulta.''",
+        "''Just had a HORRIBLE EXPERIENCE at this Sephora location. The Sephora’s area is an absolute mess; products are missing, you can’t buy anything normally because it’s just not in the stock, it’s an empty store. The service we receive from the cashier is disappointing, her attitude was absolutely terrible. Don’t recommend this Sephora location, this location needs a better professional management.''"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Sephora – Kings Plaza Mall",
+      "address": "5100 Kings Plz Space 0151, Brooklyn, NY 11234",
+      "borough": "Brooklyn",
+      "neighborhood": "Marine Park",
+      "rating": 2.8,
+      "review_count": 148,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6100625, "longitude": -73.9201651 },
+      "hours": {
+        "monday": "10:00 AM – 9:00 PM",
+        "tuesday": "10:00 AM – 9:00 PM",
+        "wednesday": "10:00 AM – 9:00 PM",
+        "thursday": "10:00 AM – 9:00 PM",
+        "friday": "10:00 AM – 9:00 PM",
+        "saturday": "10:00 AM – 9:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Sephora – Albee Square",
+      "address": "445 Albee Square W, Brooklyn, NY 11201",
+      "borough": "Brooklyn",
+      "neighborhood": "Downtown Brooklyn",
+      "rating": 2.6,
+      "review_count": 76,
+      "phone": "+1 347-238-3106",
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6907114, "longitude": -73.9832293 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 4,
+      "name": "Sephora – Harlem",
+      "address": "121 W 125th St, New York, NY 10027",
+      "borough": "Manhattan",
+      "neighborhood": "Harlem",
+      "rating": 3.8,
+      "review_count": 95,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.8085739, "longitude": -73.9465072 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "10:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 5,
+      "name": "Sephora – Herald Square (W 34th St)",
+      "address": "112 W 34th St, New York, NY 10001",
+      "borough": "Manhattan",
+      "neighborhood": "Herald Square",
+      "rating": 3.9,
+      "review_count": 1268,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7499844, "longitude": -73.9887784 },
+      "hours": {
+        "monday": "9:00 AM – 9:00 PM",
+        "tuesday": "9:00 AM – 9:00 PM",
+        "wednesday": "9:00 AM – 9:00 PM",
+        "thursday": "9:00 AM – 10:00 PM",
+        "friday": "9:00 AM – 10:00 PM",
+        "saturday": "9:00 AM – 10:00 PM",
+        "sunday": "10:00 AM – 9:00 PM"
+      }
+    },
+    {
+      "rank": 6,
+      "name": "Sephora – Fulton Center (Greenwich St)",
+      "address": "185 Greenwich St, New York, NY 10007",
+      "borough": "Manhattan",
+      "neighborhood": "Financial District",
+      "rating": 3.9,
+      "review_count": 459,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7114869, "longitude": -74.0114664 },
+      "hours": {
+        "monday": "9:00 AM – 7:00 PM",
+        "tuesday": "9:00 AM – 7:00 PM",
+        "wednesday": "9:00 AM – 7:00 PM",
+        "thursday": "9:00 AM – 7:00 PM",
+        "friday": "9:00 AM – 7:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 7,
+      "name": "Sephora – 86th St Bay Ridge",
+      "address": "429 86th St, Brooklyn, NY 11209",
+      "borough": "Brooklyn",
+      "neighborhood": "Bay Ridge",
+      "rating": 3.9,
+      "review_count": 318,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6224698, "longitude": -74.0272509 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "10:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 8,
+      "name": "Sephora – Staten Island Mall",
+      "address": "2655 Richmond Ave, Staten Island, NY 10314",
+      "borough": "Staten Island",
+      "neighborhood": "New Springville",
+      "rating": 3.9,
+      "review_count": 202,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.5823128, "longitude": -74.1658174 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 6:00 PM"
+      }
+    },
+    {
+      "rank": 9,
+      "name": "Sephora – Madison Ave (520)",
+      "address": "520 Madison Ave, New York, NY 10022",
+      "borough": "Manhattan",
+      "neighborhood": "Midtown East",
+      "rating": 4.0,
+      "review_count": 195,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7604317, "longitude": -73.9744472 },
+      "hours": {
+        "monday": "9:00 AM – 8:00 PM",
+        "tuesday": "9:00 AM – 8:00 PM",
+        "wednesday": "9:00 AM – 8:00 PM",
+        "thursday": "9:00 AM – 8:00 PM",
+        "friday": "9:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 6:00 PM"
+      }
+    },
+    {
+      "rank": 10,
+      "name": "Sephora – Jackson Heights",
+      "address": "37-16 82nd St, Jackson Heights, NY 11372",
+      "borough": "Queens",
+      "neighborhood": "Jackson Heights",
+      "rating": 4.0,
+      "review_count": 67,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7491907, "longitude": -73.8844156 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 11,
+      "name": "Sephora – Bay Plaza (Bronx)",
+      "address": "2146 Bartow Ave Suite F, Bronx, NY 10475",
+      "borough": "Bronx",
+      "neighborhood": "Co-op City",
+      "rating": 4.0,
+      "review_count": 461,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.8666498, "longitude": -73.8271297 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 12,
+      "name": "Sephora – Flatbush Ave (Brooklyn)",
+      "address": "139 Flatbush Ave, Brooklyn, NY 11217",
+      "borough": "Brooklyn",
+      "neighborhood": "Park Slope",
+      "rating": 4.0,
+      "review_count": 531,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6845602, "longitude": -73.9776112 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 13,
+      "name": "Sephora – Financial District (175 Broadway)",
+      "address": "175 Broadway, New York, NY 10007",
+      "borough": "Manhattan",
+      "neighborhood": "Financial District",
+      "rating": 4.1,
+      "review_count": 48,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7100652, "longitude": -74.0101281 },
+      "hours": {
+        "monday": "9:00 AM – 7:00 PM",
+        "tuesday": "9:00 AM – 7:00 PM",
+        "wednesday": "9:00 AM – 7:00 PM",
+        "thursday": "9:00 AM – 7:00 PM",
+        "friday": "9:00 AM – 7:00 PM",
+        "saturday": "11:00 AM – 7:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 14,
+      "name": "Sephora – Flatiron (119 5th Ave)",
+      "address": "119 5th Ave, New York, NY 10003",
+      "borough": "Manhattan",
+      "neighborhood": "Flatiron",
+      "rating": 4.1,
+      "review_count": 429,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7391639, "longitude": -73.991113 },
+      "hours": {
+        "monday": "9:00 AM – 8:00 PM",
+        "tuesday": "9:00 AM – 8:00 PM",
+        "wednesday": "9:00 AM – 8:00 PM",
+        "thursday": "9:00 AM – 8:00 PM",
+        "friday": "9:00 AM – 8:00 PM",
+        "saturday": "9:00 AM – 8:00 PM",
+        "sunday": "10:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 15,
+      "name": "Sephora – Williamsburg",
+      "address": "241 Bedford Ave, Brooklyn, NY 11211",
+      "borough": "Brooklyn",
+      "neighborhood": "Williamsburg",
+      "rating": 4.1,
+      "review_count": 381,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7157718, "longitude": -73.9595575 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "10:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 16,
+      "name": "Sephora – Forest Hills (Austin St)",
+      "address": "71-30 Austin St, Forest Hills, NY 11375",
+      "borough": "Queens",
+      "neighborhood": "Forest Hills",
+      "rating": 4.1,
+      "review_count": 663,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7196225, "longitude": -73.8437497 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 17,
+      "name": "Sephora at Kohl's – Staten Island (Forest Ave)",
+      "address": "2239 Forest Ave, Staten Island, NY 10303",
+      "borough": "Staten Island",
+      "neighborhood": "Mariners Harbor",
+      "rating": 4.1,
+      "review_count": 14,
+      "type": "Sephora at Kohl's",
+      "coordinates": { "latitude": 40.6281819, "longitude": -74.1649156 },
+      "hours": {
+        "monday": "9:00 AM – 10:00 PM",
+        "tuesday": "9:00 AM – 10:00 PM",
+        "wednesday": "9:00 AM – 10:00 PM",
+        "thursday": "9:00 AM – 10:00 PM",
+        "friday": "9:00 AM – 10:00 PM",
+        "saturday": "9:00 AM – 10:00 PM",
+        "sunday": "9:00 AM – 9:00 PM"
+      }
+    },
+    {
+      "rank": 18,
+      "name": "Sephora – Times Square",
+      "address": "1535 Broadway, New York, NY 10036",
+      "borough": "Manhattan",
+      "neighborhood": "Times Square",
+      "rating": 4.2,
+      "review_count": 1055,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7585862, "longitude": -73.9858202 },
+      "hours": {
+        "monday": "9:00 AM – 11:00 PM",
+        "tuesday": "9:00 AM – 11:00 PM",
+        "wednesday": "9:00 AM – 11:00 PM",
+        "thursday": "9:00 AM – 11:00 PM",
+        "friday": "9:00 AM – 11:00 PM",
+        "saturday": "9:00 AM – 11:00 PM",
+        "sunday": "10:00 AM – 10:00 PM"
+      }
+    },
+    {
+      "rank": 19,
+      "name": "Sephora – Brooklyn Heights (Joralemon St)",
+      "address": "210 Joralemon St, Brooklyn, NY 11201",
+      "borough": "Brooklyn",
+      "neighborhood": "Brooklyn Heights",
+      "rating": 4.2,
+      "review_count": 1152,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6923529, "longitude": -73.9908274 },
+      "hours": {
+        "monday": "10:00 AM – 8:00 PM",
+        "tuesday": "10:00 AM – 8:00 PM",
+        "wednesday": "10:00 AM – 8:00 PM",
+        "thursday": "10:00 AM – 8:00 PM",
+        "friday": "10:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 20,
+      "name": "Sephora – SoHo (557 Broadway)",
+      "address": "557 Broadway, New York, NY 10012",
+      "borough": "Manhattan",
+      "neighborhood": "SoHo",
+      "rating": 4.3,
+      "review_count": 981,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7240983, "longitude": -73.9983923 },
+      "hours": {
+        "monday": "9:00 AM – 9:00 PM",
+        "tuesday": "9:00 AM – 9:00 PM",
+        "wednesday": "9:00 AM – 9:00 PM",
+        "thursday": "9:00 AM – 9:00 PM",
+        "friday": "9:00 AM – 9:00 PM",
+        "saturday": "9:00 AM – 9:00 PM",
+        "sunday": "10:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 21,
+      "name": "Sephora – Grand Central (300 Madison Ave)",
+      "address": "300 Madison Ave, New York, NY 10017",
+      "borough": "Manhattan",
+      "neighborhood": "Midtown East",
+      "rating": 4.3,
+      "review_count": 782,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7526284, "longitude": -73.9800186 },
+      "hours": {
+        "monday": "9:00 AM – 8:00 PM",
+        "tuesday": "9:00 AM – 8:00 PM",
+        "wednesday": "9:00 AM – 8:00 PM",
+        "thursday": "9:00 AM – 8:00 PM",
+        "friday": "9:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 7:00 PM",
+        "sunday": "11:00 AM – 6:00 PM"
+      }
+    },
+    {
+      "rank": 22,
+      "name": "Sephora – 5th Avenue (580 5th Ave)",
+      "address": "580 5th Ave, New York, NY 10036",
+      "borough": "Manhattan",
+      "neighborhood": "Midtown",
+      "rating": 4.3,
+      "review_count": 1203,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7569687, "longitude": -73.9787772 },
+      "hours": {
+        "monday": "9:00 AM – 9:00 PM",
+        "tuesday": "9:00 AM – 9:00 PM",
+        "wednesday": "9:00 AM – 9:00 PM",
+        "thursday": "9:00 AM – 9:00 PM",
+        "friday": "9:00 AM – 9:00 PM",
+        "saturday": "9:00 AM – 9:00 PM",
+        "sunday": "9:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 23,
+      "name": "Sephora – Queens Center (Elmhurst)",
+      "address": "90-15 Queens Blvd, Elmhurst, NY 11373",
+      "borough": "Queens",
+      "neighborhood": "Elmhurst",
+      "rating": 4.1,
+      "review_count": 746,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7346216, "longitude": -73.8700384 },
+      "hours": {
+        "monday": "10:00 AM – 9:00 PM",
+        "tuesday": "10:00 AM – 9:00 PM",
+        "wednesday": "10:00 AM – 9:00 PM",
+        "thursday": "10:00 AM – 9:00 PM",
+        "friday": "10:00 AM – 9:00 PM",
+        "saturday": "10:00 AM – 9:00 PM",
+        "sunday": "11:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 24,
+      "name": "Sephora – Hudson Yards",
+      "address": "435 W 31st St Suite 112, New York, NY 10001",
+      "borough": "Manhattan",
+      "neighborhood": "Hudson Yards",
+      "rating": 4.4,
+      "review_count": 36,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.752318, "longitude": -73.999212 },
+      "hours": {
+        "monday": "9:00 AM – 8:00 PM",
+        "tuesday": "9:00 AM – 8:00 PM",
+        "wednesday": "9:00 AM – 8:00 PM",
+        "thursday": "9:00 AM – 8:00 PM",
+        "friday": "9:00 AM – 8:00 PM",
+        "saturday": "10:00 AM – 8:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    }
+  ]
+}

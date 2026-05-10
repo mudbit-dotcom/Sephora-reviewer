@@ -6,7 +6,7 @@ Displays the provided text as a bold serif heading in the site dark color with
 tight line-height. Font size steps up at the tablet breakpoint.
 
 USAGE EXAMPLE:
-<Headline text="City Council Approves New Budget" />
+<Headline text="The Most Poorly Reviewed Sephoras in NYC" />
 -->
 <script>
   let {

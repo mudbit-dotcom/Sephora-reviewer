@@ -7,14 +7,13 @@ YYYY-MM-DD format are automatically formatted to "JANUARY 15, 2024" style;
 other strings are displayed as-is.
 
 USAGE EXAMPLE:
-<Pubdate date="2024-01-15" />
+<Pubdate date="2026-05-11" />
 -->
 <script>
   let {
     date = '', // Date string; YYYY-MM-DD is formatted, other strings shown as-is
   } = $props();
 
-  // Format YYYY-MM-DD to "JANUARY 15, 2024" style.
   // Parses manually to avoid UTC timezone offset issues.
   // Non-ISO strings are returned unchanged.
   function formatDate(dateString) {
@@ -42,7 +41,7 @@ USAGE EXAMPLE:
   .pubdate {
     font-family: var(--font-sans);
     font-size: var(--font-size-sm);
-    color: var(--color-medium-gray);
+    color:black;
     text-transform: uppercase;
     letter-spacing: var(--letter-spacing-wider);
     margin: var(--spacing-xxs) 0;
