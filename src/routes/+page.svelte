@@ -29,7 +29,7 @@ import SearchInput from '$lib/components/Forms/SearchInput.svelte';
 <DatabaseHeader
   kicker="The New York City Sephora Database"
   headline="Sephora Locations in NYC, Ranked by Average Google Review Rating"
-  description="The most poorly reviewed Sephora locations in NYC, ranked by average Google review rating." 
+  description="Which Sephora locations to avoid, and which ones are worth a visit?" 
   byline="Niya Doyle"
   date="Updated as of May 2026"/>
 <SearchInput bind:value={search} placeholder="Search by borough..." />

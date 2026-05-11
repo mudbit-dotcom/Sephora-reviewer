@@ -9,34 +9,30 @@ Use it for headers, footers, and navigation that appear on all pages.
   import '../app.scss';
 
   // Import site-wide components
-  import SiteHeader from '$lib/components/Layout/SiteHeader.svelte';
   import SiteFooter from '$lib/components/Layout/SiteFooter.svelte';
-
-  // Access page-level settings (from +page.js)
-  import { page } from '$app/state';
 
   // In Svelte 5, we use $props() to receive the page content
   let { children } = $props();
 </script>
 
-{#if page.data.showHeader !== false}
-  <SiteHeader />
-{/if}
+<div class="page-shell">
+  <main>
+    <!-- This renders the current page's content -->
+    {@render children()}
+  </main>
 
-<main>
-  <!-- This renders the current page's content -->
-  {@render children()}
-</main>
-
-{#if page.data.showFooter !== false}
   <SiteFooter />
-{/if}
+</div>
 
 <style>
   /* Styles here only apply to this layout */
+  .page-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   main {
-    min-height: calc(
-      100vh - var(--site-chrome-height)
-    ); /* Ensure footer stays at bottom */
+    flex: 1;
   }
 </style>
