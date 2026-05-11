@@ -8,6 +8,7 @@ import DatabaseHeader from '$lib/components/Data/DatabaseHeader.svelte';
 import RankingList from '$lib/components/Data/RankingList.svelte';
 import RankingCard from '$lib/components/Data/RankingCard.svelte';
 import SearchInput from '$lib/components/Forms/SearchInput.svelte';
+import MethodologyBox from '$lib/components/Article/MethodologyBox.svelte';
 
   let { data } = $props();
 
@@ -29,7 +30,7 @@ import SearchInput from '$lib/components/Forms/SearchInput.svelte';
 <DatabaseHeader
   kicker="The New York City Sephora Database"
   headline="Sephora Locations in NYC, Ranked by Average Google Review Rating"
-  description="Which Sephora locations to avoid, and which ones are worth a visit?" 
+  description="Which Sephora locations to avoid, and which ones are worth the visit." 
   byline="Niya Doyle"
   date="Updated as of May 2026"/>
 <SearchInput bind:value={search} placeholder="Search by borough..." />
@@ -39,8 +40,6 @@ import SearchInput from '$lib/components/Forms/SearchInput.svelte';
     <RankingCard
       href={`${base}/sephora/${sephora.rank}`}
       rank={sephora.rank}
-      image={sephora.imageSrc}
-      imageAlt={`Photo of ${sephora.name}`}
       title={sephora.name}
       description={sephora.address}
       value={sephora.rating}
@@ -48,3 +47,9 @@ import SearchInput from '$lib/components/Forms/SearchInput.svelte';
     />
   {/each}
 </RankingList>
+
+  <MethodologyBox>
+    <p>
+      The data on this page comes from Google Places API, which aggregates user reviews and ratings for businesses. The rankings are based on the average rating for each Sephora location in New York City, as of May 2026. Only locations with at least 50 reviews were included in the ranking to ensure a more reliable average rating. 
+    </p>
+  </MethodologyBox>

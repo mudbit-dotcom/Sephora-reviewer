@@ -1,13 +1,12 @@
 <script>
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
-  import { SEPHORA_PLACEHOLDER_IMAGE } from '$lib/data/sephora-image.js';
 
   let { data } = $props();
 
   const bodyParagraph = $derived.by(() => data.sephora.body || '');
   const bodyBullets = $derived.by(() => data.sephora.bodyBullets || []);
-  const imageSrc = $derived.by(() => data.sephora.imageSrc || SEPHORA_PLACEHOLDER_IMAGE);
+  const imageSrc = $derived.by(() => data.sephora.imageSrc || '');
   const commentsStorageKey = $derived.by(
     () => `sephora-comments-${data.sephora.rank}`
   );
@@ -34,7 +33,7 @@
 
   function handleImageError(event) {
     event.currentTarget.onerror = null;
-    event.currentTarget.src = SEPHORA_PLACEHOLDER_IMAGE;
+    event.currentTarget.remove();
   }
 
   function saveComments(nextComments) {
@@ -109,9 +108,11 @@
     </section>
   {/if}
 
-  <figure>
-    <img src={imageSrc} alt={`Storefront photo for ${data.sephora.name}`} onerror={handleImageError} />
-  </figure>
+  {#if imageSrc}
+    <figure>
+      <img src={imageSrc} alt={`Storefront photo for ${data.sephora.name}`} onerror={handleImageError} />
+    </figure>
+  {/if}
 
   <section class="comments-section" aria-label="User comments">
     <h2 class="comments-title">Leave a Comment</h2>

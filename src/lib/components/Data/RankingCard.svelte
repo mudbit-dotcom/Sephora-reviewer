@@ -3,46 +3,18 @@
 RankingCard.svelte — A horizontal card showing rank, optional image, title, and description.
 -->
 <script>
-  import { asset } from '$app/paths';
-  import { SEPHORA_PLACEHOLDER_IMAGE } from '$lib/data/sephora-image.js';
-
   let {
     rank = 0,
     href = '',
-    image = '',
-    imageAlt = '',
     title = '',
     description = '',
     value = '',
     valueLabel = '',
-    fallbackImage = SEPHORA_PLACEHOLDER_IMAGE,
   } = $props();
-
-  // Resolve local images (those starting with /) using asset()
-  // but not external URLs (http://, https://, //, data:)
-  const resolvedImage = $derived(
-    image && image.startsWith('/') && !image.startsWith('//')
-      ? asset(image)
-      : image
-  );
-  let currentImage = $state('');
-
-  $effect(() => {
-    currentImage = resolvedImage || fallbackImage;
-  });
-
-  function handleImageError() {
-    currentImage = fallbackImage;
-  }
 </script>
 
 {#snippet cardContent()}
   <span class="rank">{rank}</span>
-  {#if currentImage}
-    <div class="thumbnail">
-      <img src={currentImage} alt={imageAlt} onerror={handleImageError} />
-    </div>
-  {/if}
   <div class="content">
     <h3 class="title">{title}</h3>
     {#if description}
@@ -95,21 +67,6 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
     min-width: 2ch;
     text-align: center;
     color: red;
-  }
-
-  .thumbnail {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 4px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
   }
 
   .content {

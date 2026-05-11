@@ -30,28 +30,14 @@ describe('BigNumber', () => {
 });
 
 describe('RankingCard', () => {
-  it('renders a placeholder when the image is missing', () => {
+  it('renders the rank and text without a thumbnail', () => {
     render(RankingCard, {
       props: {
         title: 'Sephora',
-        imageAlt: 'Photo of Sephora',
       },
     });
 
-    const img = screen.getByAltText('Photo of Sephora');
-    expect(img.getAttribute('src')).toContain('data:image/svg+xml');
-  });
-
-  it('keeps the supplied image when one is provided', () => {
-    render(RankingCard, {
-      props: {
-        title: 'Sephora',
-        image: '/photos/sephora-1.jpg',
-        imageAlt: 'Photo of Sephora',
-      },
-    });
-
-    const img = screen.getByAltText('Photo of Sephora');
-    expect(img.getAttribute('src')).toBe('/photos/sephora-1.jpg');
+    expect(screen.getByText('Sephora')).toBeTruthy();
+    expect(document.querySelector('.thumbnail')).toBeNull();
   });
 });

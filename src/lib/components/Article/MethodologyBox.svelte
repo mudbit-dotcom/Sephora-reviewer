@@ -5,7 +5,7 @@ sources, or reporting process behind a story. Typically placed at the bottom
 of an article.
 -->
 <script>
-  export let title = 'How We Reported This Story';
+  export let title = 'How We Ranked';
 </script>
 
 <aside class="methodology-box" aria-label="Methodology">
