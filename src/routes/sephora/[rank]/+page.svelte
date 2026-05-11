@@ -1,16 +1,13 @@
 <script>
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
+  import { SEPHORA_PLACEHOLDER_IMAGE } from '$lib/data/sephora-image.js';
 
   let { data } = $props();
 
-  const fallbackImage = 'https://placehold.co/1200x700?text=Add+Sephora+Photo';
-  const photoFileName = $derived.by(
-    () => data.sephora.photo || `sephora-${data.sephora.rank}.jpg`
-  );
   const bodyParagraph = $derived.by(() => data.sephora.body || '');
   const bodyBullets = $derived.by(() => data.sephora.bodyBullets || []);
-  const imageSrc = $derived.by(() => `${base}/photos/${photoFileName}`);
+  const imageSrc = $derived.by(() => data.sephora.imageSrc || SEPHORA_PLACEHOLDER_IMAGE);
   const commentsStorageKey = $derived.by(
     () => `sephora-comments-${data.sephora.rank}`
   );
@@ -37,7 +34,7 @@
 
   function handleImageError(event) {
     event.currentTarget.onerror = null;
-    event.currentTarget.src = fallbackImage;
+    event.currentTarget.src = SEPHORA_PLACEHOLDER_IMAGE;
   }
 
   function saveComments(nextComments) {

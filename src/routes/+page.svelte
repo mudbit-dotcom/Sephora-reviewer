@@ -39,7 +39,7 @@ import SearchInput from '$lib/components/Forms/SearchInput.svelte';
     <RankingCard
       href={`${base}/sephora/${sephora.rank}`}
       rank={sephora.rank}
-      image={sephora.photo ? `/photos/${sephora.photo}` : `/photos/sephora-${sephora.rank}.jpg`}
+      image={sephora.imageSrc}
       imageAlt={`Photo of ${sephora.name}`}
       title={sephora.name}
       description={sephora.address}

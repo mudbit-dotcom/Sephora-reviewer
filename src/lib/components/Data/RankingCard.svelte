@@ -4,6 +4,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
 -->
 <script>
   import { asset } from '$app/paths';
+  import { SEPHORA_PLACEHOLDER_IMAGE } from '$lib/data/sephora-image.js';
 
   let {
     rank = 0,
@@ -14,6 +15,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
     description = '',
     value = '',
     valueLabel = '',
+    fallbackImage = SEPHORA_PLACEHOLDER_IMAGE,
   } = $props();
 
   // Resolve local images (those starting with /) using asset()
@@ -26,11 +28,11 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
   let currentImage = $state('');
 
   $effect(() => {
-    currentImage = resolvedImage;
+    currentImage = resolvedImage || fallbackImage;
   });
 
   function handleImageError() {
-    currentImage = '';
+    currentImage = fallbackImage;
   }
 </script>
 

@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import sephoras from '$lib/data/nyc-sephoras.json';
+import { withSephoraImageSrc } from '$lib/server/sephora-images.js';
 
 export function load({ params }) {
   const rank = Number(params.rank);
@@ -15,6 +16,6 @@ export function load({ params }) {
   }
 
   return {
-    sephora,
+    sephora: withSephoraImageSrc(sephora),
   };
 }

@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import BigNumber from '$lib/components/Data/BigNumber.svelte';
+import RankingCard from '$lib/components/Data/RankingCard.svelte';
 
 describe('BigNumber', () => {
   it('renders the number and label', () => {
@@ -25,5 +26,32 @@ describe('BigNumber', () => {
       props: { number: '100', label: 'Count' },
     });
     expect(container.querySelector('.footnote')).toBeNull();
+  });
+});
+
+describe('RankingCard', () => {
+  it('renders a placeholder when the image is missing', () => {
+    render(RankingCard, {
+      props: {
+        title: 'Sephora',
+        imageAlt: 'Photo of Sephora',
+      },
+    });
+
+    const img = screen.getByAltText('Photo of Sephora');
+    expect(img.getAttribute('src')).toContain('data:image/svg+xml');
+  });
+
+  it('keeps the supplied image when one is provided', () => {
+    render(RankingCard, {
+      props: {
+        title: 'Sephora',
+        image: '/photos/sephora-1.jpg',
+        imageAlt: 'Photo of Sephora',
+      },
+    });
+
+    const img = screen.getByAltText('Photo of Sephora');
+    expect(img.getAttribute('src')).toBe('/photos/sephora-1.jpg');
   });
 });
