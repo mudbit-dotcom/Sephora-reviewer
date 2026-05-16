@@ -17,24 +17,22 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
   // Enable SCSS preprocessing in <style lang="scss"> blocks
   preprocess: vitePreprocess(),
-  kit: {
-    // The static adapter builds your site as plain HTML/CSS/JS files
-    // These can be hosted anywhere (GitHub Pages, Netlify, etc.)
-    adapter: adapter({
-      pages: 'build', // Output directory for HTML pages
-      assets: 'build', // Output directory for static assets
-      fallback: '404.html', // Fallback page for GitHub Pages 404 handling
-      precompress: false, // Don't pre-compress files
-      strict: true, // Fail if any routes can't be prerendered
-    }),
-    // The base path is set via environment variable during build
-    // This is configured automatically in .github/workflows/deploy.yml
-    // It's needed because GitHub Pages serves from a subdirectory
-    paths: {
-      base: process.env.BASE_PATH || '',
-      relative: false,
-    },
+ kit: {
+  adapter: adapter({
+    pages: 'build',
+    assets: 'build',
+    fallback: '404.html',
+    precompress: false,
+    strict: true,
+  }),
+  paths: {
+    base: process.env.BASE_PATH || '',
+    relative: false,
   },
+  prerender: {
+    handleHttpError: 'warn'
+  }
+}
 };
 
 export default config;
