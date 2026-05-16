@@ -4,6 +4,13 @@ import TitleSlide from '$lib/components/MultimediaGallery/TitleSlide.svelte';
 import PhotoSlide from '$lib/components/MultimediaGallery/PhotoSlide.svelte';
 import TextSlide from '$lib/components/MultimediaGallery/TextSlide.svelte';
 
+global.IntersectionObserver = class IntersectionObserver {
+  constructor(callback) {}
+  observe() {}
+  unobserve() {}
+  disconnect() {}
+};
+
 describe('TitleSlide', () => {
   it('renders headline, intro, and byline', () => {
     render(TitleSlide, {
@@ -26,7 +33,7 @@ describe('TitleSlide', () => {
         byline: 'By Test',
       },
     });
-    expect(screen.getByText('Tap to begin →')).toBeTruthy();
+    expect(screen.getByText('Scroll to begin ↓')).toBeTruthy();
   });
 
   it('renders the headline in an h1', () => {
