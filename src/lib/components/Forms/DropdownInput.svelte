@@ -5,19 +5,18 @@ DropdownInput.svelte — A styled select dropdown input.
 <script>
   let {
     options = [],
-    value = '',
+    value = $bindable(''),
     label = 'Select',
     placeholder = 'Choose an option…',
-    onchange = () => {},
   } = $props();
 </script>
 
 <div class="dropdown-input">
   <label class="dropdown-label" for="dropdown-field">{label}</label>
   <div class="select-wrapper">
-    <select id="dropdown-field" class="dropdown-field" {value} {onchange}>
+    <select id="dropdown-field" class="dropdown-field" bind:value={value}>
       {#if placeholder}
-        <option value="" selected>{placeholder}</option>
+        <option value="" disabled>{placeholder}</option>
       {/if}
       {#each options as option (option.value)}
         <option value={option.value}>{option.label}</option>

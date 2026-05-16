@@ -63,21 +63,17 @@ USAGE EXAMPLE:
   <div class="gallery" bind:this={galleryEl}>
     <div
       class="slides-track"
-      style="transform: translateX(-{currentSlide * 100}%)"
+      style="transform: translateY(-{currentSlide * 100}%)"
     >
       {@render children()}
     </div>
 
-    <button
-      class="tap-zone tap-prev"
-      onclick={goPrev}
-      aria-label="Previous slide"
-    >
-      <span class="arrow-hint">‹</span>
-    </button>
-    <button class="tap-zone tap-next" onclick={goNext} aria-label="Next slide">
-      <span class="arrow-hint">›</span>
-    </button>
+<button class="tap-zone tap-prev" onclick={goPrev} aria-label="Previous slide">
+  <span class="arrow-hint">↑</span>
+</button>
+<button class="tap-zone tap-next" onclick={goNext} aria-label="Next slide">
+  <span class="arrow-hint">↓</span>
+</button>
 
     {#if totalSlides > 1}
       <div class="dots" aria-label="Slide indicators">
@@ -112,6 +108,7 @@ USAGE EXAMPLE:
 
   .slides-track {
     display: flex;
+    flex-direction: column;
     height: 100%;
     transition: transform 0.3s ease;
   }
@@ -136,19 +133,26 @@ USAGE EXAMPLE:
   }
 
   .tap-prev {
-    left: 0;
-    width: 33.333%;
-    justify-content: flex-start;
-    padding-left: 0.5rem;
-  }
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 33.333%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
 
-  .tap-next {
-    right: 0;
-    width: 66.667%;
-    justify-content: flex-end;
-    padding-right: 0.5rem;
-  }
-
+.tap-next {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 66.667%;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
+}
   .arrow-hint {
     display: none;
     font-size: 2rem;

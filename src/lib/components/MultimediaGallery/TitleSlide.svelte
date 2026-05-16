@@ -21,25 +21,12 @@ USAGE EXAMPLE:
 </script>
 
 <div class="slide" data-slide>
-  <div class="masthead">
-    <a
-      href="https://www.nycitynewsservice.com/"
-      class="logo"
-      aria-label="NYCity News Service"
-    >
-      <span class="logo-text">
-        <span class="logo-nycity">NYCITY</span><span class="logo-news-service"
-          >News Service</span
-        >
-      </span>
-    </a>
-  </div>
   <div class="content">
     <h1>{headline}</h1>
     <p class="intro">{intro}</p>
     <p class="byline">{byline}</p>
   </div>
-  <div class="scroll-hint">Tap to begin →</div>
+  <div class="scroll-hint">Scroll to begin ↓</div>
 </div>
 
 <style lang="scss">
@@ -53,97 +40,21 @@ USAGE EXAMPLE:
     flex-direction: column;
   }
 
-  .masthead {
-    display: flex;
-    justify-content: center;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    background: linear-gradient(
-      90deg,
-      var(--color-cuny-blue-dark) 0%,
-      var(--color-accent) 50%,
-      var(--color-cuny-blue-light) 100%
-    );
-    background-size: 200% 100%;
-    animation: gradient-sweep 6s ease-in-out infinite;
-  }
-
-  @keyframes gradient-sweep {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 0%;
-    }
-    100% {
-      background-position: 0% 0%;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .masthead {
-      animation: none;
-    }
-  }
-
-  .logo {
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  .logo:hover {
-    text-decoration: none;
-  }
-
-  .logo:focus-visible {
-    outline: 2px solid var(--color-white);
-    outline-offset: 2px;
-  }
-
-  .logo-text {
-    display: inline-flex;
-    align-items: stretch;
-    border: 1px solid var(--color-white);
-  }
-
-  .logo-nycity {
-    background-color: var(--color-white);
-    color: var(--color-accent);
-    font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-extrabold);
-    padding: var(--logo-padding-mobile);
-    letter-spacing: var(--letter-spacing-wide);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-news-service {
-    color: var(--color-white);
-    font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-light);
-    padding: var(--logo-padding-mobile);
-    letter-spacing: var(--letter-spacing-tight);
-    display: flex;
-    align-items: center;
-  }
-
   .content {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 5rem;
     color: white;
     text-align: center;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.2;
     margin: 0 0 1rem;
     color: white;
@@ -183,5 +94,18 @@ USAGE EXAMPLE:
     color: white;
     display: flex;
     justify-content: center;
+    animation: nudge 1.2s ease-in-out infinite;
+  }
+
+  @keyframes nudge {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 </style>

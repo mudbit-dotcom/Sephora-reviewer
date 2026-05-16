@@ -46,6 +46,7 @@
   "dependencies": {
     "@lottiefiles/dotlottie-web": "^0.67.0",
     "@modyfi/vite-plugin-yaml": "^1.1.1",
+    "@sveltejs/svelte-scroller": "^2.0.7",
     "js-yaml": "^4.1.1",
     "maplibre-gl": "^5.21.1"
   }

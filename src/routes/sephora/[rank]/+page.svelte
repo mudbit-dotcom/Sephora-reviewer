@@ -94,7 +94,7 @@
   <p class="address">{data.sephora.address}</p>
   {#if bodyParagraph || bodyBullets.length}
     <section class="story-section" aria-label="Review summary">
-      <h2 class="story-heading">What Reviewers Say</h2>
+      <h2 class="story-heading">Key Reviews Say</h2>
       {#if bodyParagraph}
         <p class="story-body">{bodyParagraph}</p>
       {/if}

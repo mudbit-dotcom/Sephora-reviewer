@@ -1,56 +1,13 @@
+
 {
   "title": "All Sephora Locations in NYC – Ranked Low to High by Rating",
   "source": "Google Places",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-16-06",
   "total_locations": 24,
   "locations": [
     {
       "rank": 1,
-      "name": "Sephora at Kohl's – Bay Parkway",
-      "address": "8973 Bay Pkwy Ste 1, Brooklyn, NY 11214",
-      "borough": "Brooklyn",
-      "neighborhood": "Bensonhurst",
-      "rating": 2.9,
-      "review_count": 48,
-      "type": "Sephora at Kohl's",
-      "coordinates": { "latitude": 40.593163, "longitude": -74.000999 },
-      "hours": {
-        "monday": "9:00 AM – 10:00 PM",
-        "tuesday": "9:00 AM – 10:00 PM",
-        "wednesday": "9:00 AM – 10:00 PM",
-        "thursday": "9:00 AM – 10:00 PM",
-        "friday": "9:00 AM – 10:00 PM",
-        "saturday": "9:00 AM – 10:00 PM",
-        "sunday": "9:00 AM – 9:00 PM"
-      },
-      "bodyBullets": [
-        "''The store is often lacking in stock. The sales team is immature and unhelpful. I had a terrible experience and would not recommend to anyone - go to Macy's or Ulta.''",
-        "''Just had a HORRIBLE EXPERIENCE at this Sephora location. The Sephora’s area is an absolute mess; products are missing, you can’t buy anything normally because it’s just not in the stock, it’s an empty store. The service we receive from the cashier is disappointing, her attitude was absolutely terrible. Don’t recommend this Sephora location, this location needs a better professional management.''"
-      ]
-    },
-    {
-      "rank": 2,
-      "name": "Sephora – Kings Plaza Mall",
-      "address": "5100 Kings Plz Space 0151, Brooklyn, NY 11234",
-      "borough": "Brooklyn",
-      "neighborhood": "Marine Park",
-      "rating": 2.8,
-      "review_count": 148,
-      "type": "Standalone",
-      "coordinates": { "latitude": 40.6100625, "longitude": -73.9201651 },
-      "hours": {
-        "monday": "10:00 AM – 9:00 PM",
-        "tuesday": "10:00 AM – 9:00 PM",
-        "wednesday": "10:00 AM – 9:00 PM",
-        "thursday": "10:00 AM – 9:00 PM",
-        "friday": "10:00 AM – 9:00 PM",
-        "saturday": "10:00 AM – 9:00 PM",
-        "sunday": "11:00 AM – 7:00 PM"
-      }
-    },
-    {
-      "rank": 3,
-      "name": "Sephora – Albee Square",
+      "name": "Albee Square",
       "address": "445 Albee Square W, Brooklyn, NY 11201",
       "borough": "Brooklyn",
       "neighborhood": "Downtown Brooklyn",
@@ -70,8 +27,48 @@
       }
     },
     {
+      "rank": 2,
+      "name": "Kings Plaza Mall",
+      "address": "5100 Kings Plz Space 0151, Brooklyn, NY 11234",
+      "borough": "Brooklyn",
+      "neighborhood": "Marine Park",
+      "rating": 2.8,
+      "review_count": 148,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.6100625, "longitude": -73.9201651 },
+      "hours": {
+        "monday": "10:00 AM – 9:00 PM",
+        "tuesday": "10:00 AM – 9:00 PM",
+        "wednesday": "10:00 AM – 9:00 PM",
+        "thursday": "10:00 AM – 9:00 PM",
+        "friday": "10:00 AM – 9:00 PM",
+        "saturday": "10:00 AM – 9:00 PM",
+        "sunday": "11:00 AM – 7:00 PM"
+      }
+    },
+    {
+      "rank": 3,
+      "name": "Sephora at Kohl's – Bay Parkway",
+      "address": "8973 Bay Pkwy Ste 1, Brooklyn, NY 11214",
+      "borough": "Brooklyn",
+      "neighborhood": "Bensonhurst",
+      "rating": 2.9,
+      "review_count": 48,
+      "type": "Sephora at Kohl's",
+      "coordinates": { "latitude": 40.593163, "longitude": -74.000999 },
+      "hours": {
+        "monday": "9:00 AM – 10:00 PM",
+        "tuesday": "9:00 AM – 10:00 PM",
+        "wednesday": "9:00 AM – 10:00 PM",
+        "thursday": "9:00 AM – 10:00 PM",
+        "friday": "9:00 AM – 10:00 PM",
+        "saturday": "9:00 AM – 10:00 PM",
+        "sunday": "9:00 AM – 9:00 PM"
+      }
+    },
+    {
       "rank": 4,
-      "name": "Sephora – Harlem",
+      "name": "Harlem",
       "address": "121 W 125th St, New York, NY 10027",
       "borough": "Manhattan",
       "neighborhood": "Harlem",
@@ -91,7 +88,7 @@
     },
     {
       "rank": 5,
-      "name": "Sephora – Herald Square (W 34th St)",
+      "name": "Herald Square (W 34th St)",
       "address": "112 W 34th St, New York, NY 10001",
       "borough": "Manhattan",
       "neighborhood": "Herald Square",
@@ -111,7 +108,7 @@
     },
     {
       "rank": 6,
-      "name": "Sephora – Fulton Center (Greenwich St)",
+      "name": "Fulton Center (Greenwich St)",
       "address": "185 Greenwich St, New York, NY 10007",
       "borough": "Manhattan",
       "neighborhood": "Financial District",
@@ -131,7 +128,7 @@
     },
     {
       "rank": 7,
-      "name": "Sephora – 86th St Bay Ridge",
+      "name": "86th St Bay Ridge",
       "address": "429 86th St, Brooklyn, NY 11209",
       "borough": "Brooklyn",
       "neighborhood": "Bay Ridge",
@@ -151,7 +148,7 @@
     },
     {
       "rank": 8,
-      "name": "Sephora – Staten Island Mall",
+      "name": "Staten Island Mall",
       "address": "2655 Richmond Ave, Staten Island, NY 10314",
       "borough": "Staten Island",
       "neighborhood": "New Springville",
@@ -171,7 +168,7 @@
     },
     {
       "rank": 9,
-      "name": "Sephora – Madison Ave (520)",
+      "name": "Madison Ave (520)",
       "address": "520 Madison Ave, New York, NY 10022",
       "borough": "Manhattan",
       "neighborhood": "Midtown East",
@@ -191,7 +188,7 @@
     },
     {
       "rank": 10,
-      "name": "Sephora – Jackson Heights",
+      "name": "Jackson Heights",
       "address": "37-16 82nd St, Jackson Heights, NY 11372",
       "borough": "Queens",
       "neighborhood": "Jackson Heights",
@@ -211,7 +208,7 @@
     },
     {
       "rank": 11,
-      "name": "Sephora – Bay Plaza (Bronx)",
+      "name": "Bay Plaza (Bronx)",
       "address": "2146 Bartow Ave Suite F, Bronx, NY 10475",
       "borough": "Bronx",
       "neighborhood": "Co-op City",
@@ -231,7 +228,7 @@
     },
     {
       "rank": 12,
-      "name": "Sephora – Flatbush Ave (Brooklyn)",
+      "name": "Flatbush Ave (Brooklyn)",
       "address": "139 Flatbush Ave, Brooklyn, NY 11217",
       "borough": "Brooklyn",
       "neighborhood": "Park Slope",
@@ -251,7 +248,7 @@
     },
     {
       "rank": 13,
-      "name": "Sephora – Financial District (175 Broadway)",
+      "name": "Financial District (175 Broadway)",
       "address": "175 Broadway, New York, NY 10007",
       "borough": "Manhattan",
       "neighborhood": "Financial District",
@@ -271,7 +268,7 @@
     },
     {
       "rank": 14,
-      "name": "Sephora – Flatiron (119 5th Ave)",
+      "name": "Flatiron (119 5th Ave)",
       "address": "119 5th Ave, New York, NY 10003",
       "borough": "Manhattan",
       "neighborhood": "Flatiron",
@@ -291,7 +288,7 @@
     },
     {
       "rank": 15,
-      "name": "Sephora – Williamsburg",
+      "name": "Williamsburg",
       "address": "241 Bedford Ave, Brooklyn, NY 11211",
       "borough": "Brooklyn",
       "neighborhood": "Williamsburg",
@@ -311,7 +308,7 @@
     },
     {
       "rank": 16,
-      "name": "Sephora – Forest Hills (Austin St)",
+      "name": "Forest Hills (Austin St)",
       "address": "71-30 Austin St, Forest Hills, NY 11375",
       "borough": "Queens",
       "neighborhood": "Forest Hills",
@@ -349,9 +346,29 @@
         "sunday": "9:00 AM – 9:00 PM"
       }
     },
-    {
+     {
       "rank": 18,
-      "name": "Sephora – Times Square",
+      "name": "Queens Center (Elmhurst)",
+      "address": "90-15 Queens Blvd, Elmhurst, NY 11373",
+      "borough": "Queens",
+      "neighborhood": "Elmhurst",
+      "rating": 4.1,
+      "review_count": 746,
+      "type": "Standalone",
+      "coordinates": { "latitude": 40.7346216, "longitude": -73.8700384 },
+      "hours": {
+        "monday": "10:00 AM – 9:00 PM",
+        "tuesday": "10:00 AM – 9:00 PM",
+        "wednesday": "10:00 AM – 9:00 PM",
+        "thursday": "10:00 AM – 9:00 PM",
+        "friday": "10:00 AM – 9:00 PM",
+        "saturday": "10:00 AM – 9:00 PM",
+        "sunday": "11:00 AM – 8:00 PM"
+      }
+    },
+    {
+      "rank": 19,
+      "name": "Times Square",
       "address": "1535 Broadway, New York, NY 10036",
       "borough": "Manhattan",
       "neighborhood": "Times Square",
@@ -370,8 +387,8 @@
       }
     },
     {
-      "rank": 19,
-      "name": "Sephora – Brooklyn Heights (Joralemon St)",
+      "rank": 20,
+      "name": "Brooklyn Heights (Joralemon St)",
       "address": "210 Joralemon St, Brooklyn, NY 11201",
       "borough": "Brooklyn",
       "neighborhood": "Brooklyn Heights",
@@ -390,8 +407,8 @@
       }
     },
     {
-      "rank": 20,
-      "name": "Sephora – SoHo (557 Broadway)",
+      "rank": 21,
+      "name": "SoHo (557 Broadway)",
       "address": "557 Broadway, New York, NY 10012",
       "borough": "Manhattan",
       "neighborhood": "SoHo",
@@ -410,8 +427,8 @@
       }
     },
     {
-      "rank": 21,
-      "name": "Sephora – Grand Central (300 Madison Ave)",
+      "rank": 22,
+      "name": "Grand Central (300 Madison Ave)",
       "address": "300 Madison Ave, New York, NY 10017",
       "borough": "Manhattan",
       "neighborhood": "Midtown East",
@@ -430,7 +447,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
       "name": "Sephora – 5th Avenue (580 5th Ave)",
       "address": "580 5th Ave, New York, NY 10036",
       "borough": "Manhattan",
@@ -450,28 +467,8 @@
       }
     },
     {
-      "rank": 23,
-      "name": "Sephora – Queens Center (Elmhurst)",
-      "address": "90-15 Queens Blvd, Elmhurst, NY 11373",
-      "borough": "Queens",
-      "neighborhood": "Elmhurst",
-      "rating": 4.1,
-      "review_count": 746,
-      "type": "Standalone",
-      "coordinates": { "latitude": 40.7346216, "longitude": -73.8700384 },
-      "hours": {
-        "monday": "10:00 AM – 9:00 PM",
-        "tuesday": "10:00 AM – 9:00 PM",
-        "wednesday": "10:00 AM – 9:00 PM",
-        "thursday": "10:00 AM – 9:00 PM",
-        "friday": "10:00 AM – 9:00 PM",
-        "saturday": "10:00 AM – 9:00 PM",
-        "sunday": "11:00 AM – 8:00 PM"
-      }
-    },
-    {
-      "rank": 24,
-      "name": "Sephora – Hudson Yards",
+      "rank": 25,
+      "name": "Hudson Yards",
       "address": "435 W 31st St Suite 112, New York, NY 10001",
       "borough": "Manhattan",
       "neighborhood": "Hudson Yards",

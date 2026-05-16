@@ -43,6 +43,10 @@ USAGE EXAMPLE:
     paint = {}, // MapLibre paint properties
     layout = {}, // MapLibre layout properties
     popup = null, // Optional function (feature) => htmlString
+    fadeIn = false, // Fade opacity-type paint properties in when the layer mounts
+    fadeInDuration = 900, // Fade-in transition duration in milliseconds
+    fadeInDelay = 0, // Optional delay before starting the fade (ms)
+    fadeInThreshold = 0.25, // IntersectionObserver threshold to trigger fade
   } = $props();
 
   const validatedId = $derived.by(() => {
@@ -60,8 +64,18 @@ USAGE EXAMPLE:
     );
   }
 
+  // Try to consume slide visibility context so we can time fades to slide visibility
+  let slideVisibility = null;
+  try {
+    slideVisibility = getContext('multimedia-slide-visible');
+  } catch (e) {
+    slideVisibility = null;
+  }
+
   /** Tracks the currently-open popup so we can close it when another click opens a new one. */
   let openPopup = null;
+  let fadeInObserver = null;
+  let hasFadedIn = false;
 
   /** Handles clicks on the layer: builds an HTML popup from the template function. */
   function handleClick(e) {
@@ -97,6 +111,14 @@ USAGE EXAMPLE:
     const map = ctx.getMap();
     if (!map) return;
 
+    const fadeInPaint = fadeIn && !hasFadedIn
+      ? Object.fromEntries(
+          Object.entries(paint).map(([key, value]) =>
+            key.endsWith('-opacity') ? [key, 0] : [key, value]
+          )
+        )
+      : paint;
+
     // Remove existing source/layer if already present (e.g. after style reload)
     if (map.getLayer(validatedId)) map.removeLayer(validatedId);
     if (map.getSource(validatedId)) map.removeSource(validatedId);
@@ -110,9 +132,73 @@ USAGE EXAMPLE:
       id: validatedId,
       type,
       source: validatedId,
-      paint,
+      paint: fadeInPaint,
       layout,
     });
+
+    if (fadeIn) {
+        if (fadeInObserver) {
+          fadeInObserver.disconnect();
+        }
+
+        const mapContainer = map.getContainer?.();
+        if (mapContainer) {
+          // If a parent TextSlide exposes an `onVisible` API, use that to trigger
+          // the fade in exactly when the slide becomes visible. Otherwise fall
+          // back to observing the map container's intersection.
+          if (slideVisibility && typeof slideVisibility.onVisible === 'function') {
+            const unregister = slideVisibility.onVisible((opts = {}) => {
+              if (hasFadedIn) return;
+              hasFadedIn = true;
+
+              const currentMap = ctx.getMap();
+              if (!currentMap || !currentMap.getLayer(validatedId)) return;
+
+              const duration = typeof opts.duration === 'number' ? opts.duration : fadeInDuration;
+              const delay = typeof opts.delay === 'number' ? opts.delay : fadeInDelay;
+
+              for (const [key, value] of Object.entries(paint)) {
+                if (key.endsWith('-opacity')) {
+                  currentMap.setPaintProperty(validatedId, `${key}-transition`, {
+                    duration,
+                    delay,
+                  });
+                  currentMap.setPaintProperty(validatedId, key, value);
+                }
+              }
+
+              unregister();
+            });
+          } else {
+            fadeInObserver = new IntersectionObserver(
+              ([entry]) => {
+                if (!entry?.isIntersecting) return;
+
+                hasFadedIn = true;
+
+                const currentMap = ctx.getMap();
+                if (!currentMap || !currentMap.getLayer(validatedId)) return;
+
+                for (const [key, value] of Object.entries(paint)) {
+                  if (key.endsWith('-opacity')) {
+                    currentMap.setPaintProperty(validatedId, `${key}-transition`, {
+                      duration: fadeInDuration,
+                      delay: fadeInDelay,
+                    });
+                    currentMap.setPaintProperty(validatedId, key, value);
+                  }
+                }
+
+                fadeInObserver?.disconnect();
+                fadeInObserver = null;
+              },
+              { threshold: fadeInThreshold }
+            );
+
+            fadeInObserver.observe(mapContainer);
+          }
+        }
+      }
 
     if (popup) {
       map.on('click', validatedId, handleClick);
@@ -138,6 +224,11 @@ USAGE EXAMPLE:
     if (openPopup) {
       openPopup.remove();
       openPopup = null;
+    }
+
+    if (fadeInObserver) {
+      fadeInObserver.disconnect();
+      fadeInObserver = null;
     }
   }
 
@@ -181,6 +272,9 @@ USAGE EXAMPLE:
 
     // Apply current paint properties
     for (const [key, value] of Object.entries(currentPaint)) {
+      if (fadeIn && !hasFadedIn && key.endsWith('-opacity')) {
+        continue;
+      }
       map.setPaintProperty(validatedId, key, value);
     }
 
