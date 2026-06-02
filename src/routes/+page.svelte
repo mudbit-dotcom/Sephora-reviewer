@@ -23,7 +23,7 @@ This is your page!
   const boroughOptions = [
     { value: 'Bronx', label: 'Bronx' },
     { value: 'Brooklyn', label: 'Brooklyn' },
-    { value: 'New York', label: 'Manhattan' },
+    { value: 'New York', label: 'New York' },
     { value: 'Queens', label: 'Queens' },
     { value: 'Staten Island', label: 'Staten Island' },
   ];
@@ -60,7 +60,7 @@ const slideContent2 = {
   body: 'But this Sephora inside a Kohls in Bensonhurst has 2.9 star rating on Google reviews. Why the difference? Is it because of the location, the store format, or something else?'
 };
 const slideContent3 = {
-  body: 'There are <span class="highlight">24</span> Sephora in New York City. Which one is the best? Lets dive into the reviews to find out.'
+  body: 'There are <span class="highlight">24</span> Sephoras in New York City. Which one is the best? Lets dive into the reviews to find out.'
 };
 
 const layerData = $derived.by(() => ({
