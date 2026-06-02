@@ -23,7 +23,7 @@ This is your page!
   const boroughOptions = [
     { value: 'Bronx', label: 'Bronx' },
     { value: 'Brooklyn', label: 'Brooklyn' },
-    { value: 'New York', label: 'New York' },
+    { value: 'Manhattan', label: 'Manhattan' },
     { value: 'Queens', label: 'Queens' },
     { value: 'Staten Island', label: 'Staten Island' },
   ];
@@ -53,7 +53,7 @@ const sephoraPoints = $derived(
 );
 
 const slideContent = {
-  body: 'There are more types of Sephoras than you think. From Sephora Studio, Sephora at Kohl’s, to regular freestanding stores, the beauty retailer has a variety of store formats across New York City. For example, this 34th Herald Square location is Sephora/s flagship store. It has an average of 3.9 star on Google reviews, which is solid for the busiest location.'
+  body: 'There are more types of Sephoras than you think. From Sephora Studio, Sephora at Kohl’s, to regular freestanding stores, the beauty retailer has a variety of store formats across New York City. For example, this 34th Herald Square location is the flagship store. It has an average of 3.9 star on Google reviews, which is solid for the busiest location.'
 };
 
 const slideContent2 = {
